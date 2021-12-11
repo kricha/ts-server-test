@@ -1,10 +1,14 @@
 {
+  "type": "module",
   "devDependencies": {
+    "@types/node": "^16.11.12",
     "ts-node": "^10.4.0",
+    "tsm": "^2.2.1",
     "typescript": "^4.5.3"
   },
   "dependencies": {
     "@tinyhttp/app": "^2.0.13",
+    "log4js": "^6.3.0",
     "socket.io": "^4.4.0"
   }
 }

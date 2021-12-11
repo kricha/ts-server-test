@@ -2,6 +2,13 @@
 
 import {Server, Socket} from "socket.io";
 import {App} from '@tinyhttp/app';
+import {logger} from './logger';
+
+import * as fs from 'fs';
+if (!fs.existsSync('./src/test.ts')) {
+    logger.error(`NOK: No  ./src/test.ts`);
+}
+
 const port = 3000;
 
 const app = new App();
@@ -22,4 +29,5 @@ io.on("connection", (socket: Socket) => {
     // ...
 });
 
+logger.info('OK: end.');
 console.log('end.');

@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "rootDir": "src",
+      "outDir": "dist",
+      "target": "es5",
+      "lib": [
+        "es2020", "DOM"
+      ],
+      "module": "ESNext", // (A)
+      "moduleResolution": "node", // (B)
+      "esModuleInterop": true,
+      "strict": true,
+    //   "sourceMap": true,
+    //   // Needed for CommonJS modules
+      "allowSyntheticDefaultImports": true, // (C)
+    //   //
+      "declaration": true,
+    }
+  }
